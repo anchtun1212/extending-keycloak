@@ -14,5 +14,10 @@ https://docs.oracle.com/javase/tutorial/ext/basics/spi.html#define-the-service-p
 
 # Deploy new changes:
 
-1- Run: `mvn clean package -Pdev`
-You have two choices:
+      1- Run: mvn clean package -Pdev
+      2- You have two choices:
+      2-1- Run: sudo docker compose up
+      2-2: Copy: /home/mohammedayman/git/extending-keycloak/src/main/resources/theme to /home/mohammedayman/software/keycloak-22.0.3/themes means
+           cp /home/mohammedayman/git/extending-keycloak/src/main/resources/theme /home/mohammedayman/software/keycloak-22.0.3/themes
+           and Copy /home/mohammedayman/git/extending-keycloak/target/deploy to /home/mohammedayman/software/keycloak-22.0.3/providers means
+           cp /home/mohammedayman/git/extending-keycloak/target/deploy/extending-keycloak-0.0.1-SNAPSHOT.jar /home/mohammedayman/software/keycloak-22.0.3/providers
