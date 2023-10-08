@@ -1,4 +1,4 @@
-package com.anchtun.keycloak;
+package com.anchtun.keycloak.demo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

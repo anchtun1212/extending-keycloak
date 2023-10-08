@@ -11,3 +11,8 @@ https://docs.oracle.com/javase/tutorial/ext/basics/spi.html#define-the-service-p
 - `Service provider interface (SPI)`: The set of public interfaces and abstract classes that a service defines. The SPI defines the classes and methods available to your application.
 
 - `Service Provider`: Implements the SPI. An application with extensible services enable you, vendors, and customers to add service providers without modifying the original application.
+
+# Deploy new changes:
+
+1- Run: `mvn clean package -Pdev`
+You have two choices:
