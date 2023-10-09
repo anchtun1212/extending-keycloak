@@ -12,6 +12,10 @@ https://docs.oracle.com/javase/tutorial/ext/basics/spi.html#define-the-service-p
 
 - `Service Provider`: Implements the SPI. An application with extensible services enable you, vendors, and customers to add service providers without modifying the original application.
 
+# Configuration provider
+
+https://www.keycloak.org/server/configuration-provider
+
 # Deploy new changes:
 
       1- Run: mvn clean package -Pdev
