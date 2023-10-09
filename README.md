@@ -1,3 +1,9 @@
+# Configuring Keycloak
+
+https://www.keycloak.org/server/configuration
+
+You can run this command: `/home/mohammedayman/software/keycloak-22.0.3/bin/kc.sh start-dev --db mysql --db-url-host localhost --db-username keycloak --db-password keycloak --http-port=8094 --spi-email-sender-provider=default`
+
 # ServiceLoader
 
 https://docs.oracle.com/javase/8/docs/api/java/util/ServiceLoader.html
