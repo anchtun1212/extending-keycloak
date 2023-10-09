@@ -1,3 +1,7 @@
+# Keycloak Repository
+
+https://github.com/keycloak/keycloak
+
 # Configuring Keycloak
 
 https://www.keycloak.org/server/configuration
@@ -41,6 +45,10 @@ https://www.keycloak.org/server/configuration-provider
 # Add custom REST endpoints
 
 https://www.keycloak.org/docs/latest/server_development/index.html#_extensions_rest
+
+# Theme resources
+
+https://www.keycloak.org/docs/latest/server_development/index.html#_theme_resource
 
 # Deploy new changes:
 
