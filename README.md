@@ -4,6 +4,12 @@ https://www.keycloak.org/server/configuration
 
 You can run this command: `/home/mohammedayman/software/keycloak-22.0.3/bin/kc.sh start-dev --db mysql --db-url-host localhost --db-username keycloak --db-password keycloak --http-port=8094 --spi-email-sender-provider=default`
 
+# URLs
+
+http://localhost:8094/realms/test1/.well-known/openid-configuration
+
+
+
 # ServiceLoader
 
 https://docs.oracle.com/javase/8/docs/api/java/util/ServiceLoader.html
@@ -21,6 +27,10 @@ https://docs.oracle.com/javase/tutorial/ext/basics/spi.html#define-the-service-p
 # Configuration provider
 
 https://www.keycloak.org/server/configuration-provider
+
+# Add custom REST endpoints
+
+https://www.keycloak.org/docs/latest/server_development/index.html#_extensions_rest
 
 # Deploy new changes:
 
