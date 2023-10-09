@@ -5,9 +5,14 @@ import org.keycloak.services.managers.AppAuthManager;
 import org.keycloak.services.managers.AuthenticationManager;
 import org.keycloak.services.resource.RealmResourceProvider;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.NotAuthorizedException;
-import javax.ws.rs.QueryParam;
+import jakarta.ws.rs.GET;
+import jakarta.ws.rs.NotAuthorizedException;
+import jakarta.ws.rs.QueryParam;
+
+// NOT WORKING FROM KEYCLOAK 22.0.0 so use: jakarta.ws.rs.* instead
+//import javax.ws.rs.GET;
+//import javax.ws.rs.NotAuthorizedException;
+//import javax.ws.rs.QueryParam;
 
 public class EmailExistsResourceProvider implements RealmResourceProvider {
 

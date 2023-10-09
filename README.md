@@ -8,7 +8,9 @@ You can run this command: `/home/mohammedayman/software/keycloak-22.0.3/bin/kc.s
 
 http://localhost:8094/realms/test1/.well-known/openid-configuration
 
-To get the token: http://localhost:8094/realms/test1/protocol/openid-connect/auth?client_id=account-console&response_type=token&redirect_uri=https://httpbin.org/
+To get the token: 
+
+http://localhost:8094/realms/test1/protocol/openid-connect/auth?client_id=account-console&response_type=token&redirect_uri=https://httpbin.org/
 
 Will redirect to https://httpbin.org/ then copy the token from: `access_token` to `token_type`.
 
@@ -16,7 +18,7 @@ Will redirect to https://httpbin.org/ then copy the token from: `access_token` t
 
 		export TOKEN=copied_token
 		
-		curl -v -H "Authorization: Bearer $TOKEN" "localhost:8094/realms/test1/email-exists?email=med.aymen.charrada@gmail.com" | jq
+		curl -v -H "Authorization: Bearer $TOKEN" "localhost:8094/realms/test1/email-exists?email=med.aymen.charrada@gmail.com"
 
 # ServiceLoader
 
