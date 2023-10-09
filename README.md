@@ -14,9 +14,9 @@ Will redirect to https://httpbin.org/ then copy the token from: `access_token` t
 
 # Commands
 
-export TOKEN=copied_token
-
-curl -v -H "Authorization: Bearer $TOKEN" "localhost:8094/realms/test1/email-exists?email=med.aymen.charrada@gmail.com" | jq
+		export TOKEN=copied_token
+		
+		curl -v -H "Authorization: Bearer $TOKEN" "localhost:8094/realms/test1/email-exists?email=med.aymen.charrada@gmail.com" | jq
 
 # ServiceLoader
 
