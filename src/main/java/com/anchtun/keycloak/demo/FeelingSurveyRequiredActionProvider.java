@@ -1,5 +1,6 @@
 package com.anchtun.keycloak.demo;
 
+import org.keycloak.authentication.InitiatedActionSupport;
 import org.keycloak.authentication.RequiredActionContext;
 import org.keycloak.authentication.RequiredActionProvider;
 import org.keycloak.connections.jpa.JpaConnectionProvider;
@@ -49,6 +50,18 @@ public class FeelingSurveyRequiredActionProvider implements RequiredActionProvid
         log.info("feelingValue= " + feeling);
         addAttribute(context, "feeling", Objects.isNull(feeling) ? null : feeling);
         context.success();
+    }
+    
+    // Initiated Action Support
+    @Override
+    public InitiatedActionSupport initiatedActionSupport() {
+    	return InitiatedActionSupport.SUPPORTED;
+    }
+    
+    // In our case, we just set it to 200 because we don't want to re-authenticate
+    @Override
+    public int getMaxAuthAge() {
+    	return 200;
     }
 
     @Override
