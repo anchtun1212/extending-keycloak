@@ -9,21 +9,19 @@ https://www.keycloak.org/server/configuration
 You can run this command: `/home/mohammedayman/software/keycloak-22.0.3/bin/kc.sh start-dev --db mysql --db-url-host localhost --db-username keycloak --db-password keycloak --http-port=8094 --spi-email-sender-provider=default`
 
 # URLs
-
+- ServiceLoader - https://docs.oracle.com/javase/8/docs/api/java/util/ServiceLoader.html
+- Configuration provider - https://www.keycloak.org/server/configuration-provider
+- Add custom REST endpoints - https://www.keycloak.org/docs/latest/server_development/index.html#_extensions_rest
+- Theme resources - https://www.keycloak.org/docs/latest/server_development/index.html#_theme_resource
+- Custom SPI - https://www.keycloak.org/docs/latest/server_development/#_extensions_spi
 - openid-configuration - http://localhost:8094/realms/test1/.well-known/openid-configuration
 - To get the token - http://localhost:8094/realms/test1/protocol/openid-connect/auth?client_id=account-console&response_type=token&redirect_uri=https://httpbin.org/
   Will redirect to https://httpbin.org/ then copy the token from: `access_token` to `token_type`.
 - URL ENCODER - https://www.urlencoder.org/
   
 # Commands
-
 		export TOKEN=copied_token
-		
 		curl -v -H "Authorization: Bearer $TOKEN" "localhost:8094/realms/test1/email-exists?email=med.aymen.charrada@gmail.com"
-
-# ServiceLoader
-
-https://docs.oracle.com/javase/8/docs/api/java/util/ServiceLoader.html
 
 # SPI (Service Provider Interface)
 
@@ -34,18 +32,6 @@ https://docs.oracle.com/javase/tutorial/ext/basics/spi.html#define-the-service-p
 - `Service provider interface (SPI)`: The set of public interfaces and abstract classes that a service defines. The SPI defines the classes and methods available to your application.
 
 - `Service Provider`: Implements the SPI. An application with extensible services enable you, vendors, and customers to add service providers without modifying the original application.
-
-# Configuration provider
-
-https://www.keycloak.org/server/configuration-provider
-
-# Add custom REST endpoints
-
-https://www.keycloak.org/docs/latest/server_development/index.html#_extensions_rest
-
-# Theme resources
-
-https://www.keycloak.org/docs/latest/server_development/index.html#_theme_resource
 
 # Deploy new changes:
 
