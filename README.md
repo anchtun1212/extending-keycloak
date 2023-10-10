@@ -55,9 +55,9 @@ https://www.keycloak.org/docs/latest/server_development/index.html#_theme_resour
       1- Run: mvn clean package -Pdev
       2- You have two choices:
       2-1- Run: sudo docker compose up
-      2-2: Copy: /home/mohammedayman/git/extending-keycloak/src/main/resources/theme to /home/mohammedayman/software/keycloak-22.0.3/themes means
-           cp -r /home/mohammedayman/git/extending-keycloak/src/main/resources/theme /home/mohammedayman/software/keycloak-22.0.3/themes
-           and Copy /home/mohammedayman/git/extending-keycloak/target/deploy to /home/mohammedayman/software/keycloak-22.0.3/providers means
-           cp /home/mohammedayman/git/extending-keycloak/target/deploy/extending-keycloak-0.0.1-SNAPSHOT.jar /home/mohammedayman/software/keycloak-22.0.3/providers
+      2-2: Copy: /home/mohammedayman/git/extending-keycloak/src/main/resources/theme to /home/mohammedayman/software/keycloak-22.0.4/themes means
+           cp -r /home/mohammedayman/git/extending-keycloak/src/main/resources/theme /home/mohammedayman/software/keycloak-22.0.4/themes
+           and Copy /home/mohammedayman/git/extending-keycloak/target/deploy to /home/mohammedayman/software/keycloak-22.0.4/providers means
+           cp /home/mohammedayman/git/extending-keycloak/extending-keycloak/target/deploy/extending-keycloak-0.0.1-SNAPSHOT.jar /home/mohammedayman/software/keycloak-22.0.4/providers
       3- Run Keycloak: /home/mohammedayman/software/keycloak-22.0.3/bin/kc.sh start-dev --db mysql --db-url-host localhost --db-username keycloak --db-password keycloak --http-port=8094
 
