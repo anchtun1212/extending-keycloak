@@ -22,7 +22,7 @@ public class FeelingSurveyRequiredActionProvider implements RequiredActionProvid
     public void evaluateTriggers(RequiredActionContext context) {
         var now = LocalDate.now();
         // trigger this every Monday
-        if (now.getDayOfWeek() == DayOfWeek.MONDAY && !now.toString().equals(context.getUser().getFirstAttribute("last_triggered_date"))) {
+        if (now.getDayOfWeek() == DayOfWeek.TUESDAY && !now.toString().equals(context.getUser().getFirstAttribute("last_triggered_date"))) {
             context.getUser().addRequiredAction("feeling-survey");
             // I had to add this, otherwise the action will be triggered indefinitely on Mondays
             // and the user will not be able to use the app, we need a condition to escape after the first add
