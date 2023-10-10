@@ -10,14 +10,11 @@ You can run this command: `/home/mohammedayman/software/keycloak-22.0.3/bin/kc.s
 
 # URLs
 
-http://localhost:8094/realms/test1/.well-known/openid-configuration
-
-To get the token: 
-
-http://localhost:8094/realms/test1/protocol/openid-connect/auth?client_id=account-console&response_type=token&redirect_uri=https://httpbin.org/
-
-Will redirect to https://httpbin.org/ then copy the token from: `access_token` to `token_type`.
-
+- openid-configuration - http://localhost:8094/realms/test1/.well-known/openid-configuration
+- To get the token - http://localhost:8094/realms/test1/protocol/openid-connect/auth?client_id=account-console&response_type=token&redirect_uri=https://httpbin.org/
+  Will redirect to https://httpbin.org/ then copy the token from: `access_token` to `token_type`.
+- URL ENCODER - https://www.urlencoder.org/
+  
 # Commands
 
 		export TOKEN=copied_token
