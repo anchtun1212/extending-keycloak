@@ -1,5 +1,10 @@
 package com.anchtun.keycloak.demo;
 
+import java.time.DayOfWeek;
+import java.time.LocalDate;
+import java.util.Objects;
+import java.util.UUID;
+
 import org.keycloak.authentication.InitiatedActionSupport;
 import org.keycloak.authentication.RequiredActionContext;
 import org.keycloak.authentication.RequiredActionProvider;
@@ -9,11 +14,6 @@ import org.keycloak.models.jpa.entities.UserEntity;
 
 import jakarta.ws.rs.core.MultivaluedMap;
 import lombok.extern.slf4j.Slf4j;
-
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-import java.util.Objects;
-import java.util.UUID;
 
 @Slf4j
 public class FeelingSurveyRequiredActionProvider implements RequiredActionProvider {

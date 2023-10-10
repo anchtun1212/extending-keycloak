@@ -1,5 +1,12 @@
 package com.anchtun.keycloak.demo;
 
+import java.util.Map;
+
+import org.keycloak.models.KeycloakSession;
+import org.keycloak.services.managers.AppAuthManager;
+import org.keycloak.services.managers.AuthenticationManager.AuthResult;
+import org.keycloak.services.resource.RealmResourceProvider;
+
 import jakarta.ws.rs.ForbiddenException;
 import jakarta.ws.rs.GET;
 import jakarta.ws.rs.NotAuthorizedException;
@@ -8,12 +15,6 @@ import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import jakarta.ws.rs.core.Response;
 import lombok.RequiredArgsConstructor;
-import org.keycloak.models.KeycloakSession;
-import org.keycloak.services.managers.AppAuthManager;
-import org.keycloak.services.managers.AuthenticationManager.AuthResult;
-import org.keycloak.services.resource.RealmResourceProvider;
-
-import java.util.Map;
 
 @RequiredArgsConstructor
 public class MyResourceProvider implements RealmResourceProvider {
