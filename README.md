@@ -61,3 +61,16 @@ https://www.keycloak.org/docs/latest/server_development/index.html#_theme_resour
            cp /home/mohammedayman/git/extending-keycloak/extending-keycloak/target/deploy/extending-keycloak-0.0.1-SNAPSHOT.jar /home/mohammedayman/software/keycloak-22.0.4/providers
       3- Run Keycloak: /home/mohammedayman/software/keycloak-22.0.4/bin/kc.sh start-dev --db mysql --db-url-host localhost --db-username keycloak --db-password keycloak --http-port=8094
 
+# keycloak-app-consumer
+
+	Do this in Keycloak:
+	realm name: keycloak-app-consumer
+	username:mohamed
+	password:123456
+	client_id:aiasclient
+	client_secret:4zyUN1wrQns24BIoklelZWgsU6tZ0h6X
+	The user will login to:	
+	http://localhost:8094/realms/keycloak-app-consumer/protocol/openid-connect/auth?client_id=aiasclient&redirect_uri=http%3A%2F%2Flocalhost%3A8081&response_type=code&scope=openid+profile+email&state=any
+ 	The spring boot application will redirect to: 
+	http://localhost:8094/realms/keycloak-app-consumer/protocol/openid-connect/auth?client_id=aiasclient&response_type=code&redirect_uri=http://localhost:8081&kc_action=feeling-survey
+
