@@ -22,6 +22,7 @@ You can run this command: `/home/mohammedayman/software/keycloak-22.0.3/bin/kc.s
 - URL ENCODER - https://www.urlencoder.org/
 - keycloakify - https://docs.keycloakify.dev/
 - keycloakify GitHub - https://github.com/keycloakify/keycloakify.git
+- keycloakify-starter - https://github.com/keycloakify/keycloakify-starter
 - Apache FreeMarker - https://freemarker.apache.org/
 - keycloak Themes - https://github.com/keycloak/keycloak/tree/main/themes
   
