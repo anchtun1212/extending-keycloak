@@ -7,7 +7,8 @@
 
     <changeSet  id="keycloak-demo-1"  author="anchtun1212">
         <createTable  tableName="SUBSCRIPTION">
-            <column  name="ID"  type="uuid">
+        	<column  name="ID"  type="int">
+<!--             <column  name="ID"  type="uuid"> -->
                 <constraints  primaryKey="true"  nullable="false"/>
             </column>
             <column  name="USER_ID"  type="varchar(50)">

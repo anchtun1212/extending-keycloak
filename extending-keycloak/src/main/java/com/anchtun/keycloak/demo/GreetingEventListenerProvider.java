@@ -1,7 +1,6 @@
 package com.anchtun.keycloak.demo;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
 import org.keycloak.events.Event;
 import org.keycloak.events.EventListenerProvider;
@@ -33,7 +32,7 @@ public class GreetingEventListenerProvider implements EventListenerProvider {
          greetingProvider.sayHi();
         } else if (event.getType() == EventType.REGISTER) {
             Subscription subscription = new Subscription();
-            subscription.setId(UUID.randomUUID());
+            //subscription.setId(UUID.randomUUID());
             UserEntity userEntity = new UserEntity();
             userEntity.setId(event.getUserId());
             subscription.setUser(userEntity);
