@@ -62,3 +62,9 @@ https://docs.oracle.com/javase/tutorial/ext/basics/spi.html#define-the-service-p
  	The spring boot application will redirect to: 
 	http://localhost:8094/realms/keycloak-app-consumer/protocol/openid-connect/auth?client_id=aiasclient&response_type=code&redirect_uri=http://localhost:8081&kc_action=feeling-survey
 
+ # keycloakify
+
+	 git clone https://github.com/keycloakify/keycloakify-starter.git
+	 yarn install && yarn build-keycloak-theme
+	 cp /home/mohammedayman/git/keycloakify-starter/build_keycloak/target/keycloakify-starter-keycloak-theme-4.7.3.jar /home/mohammedayman/software/keycloak-22.0.4/providers
+
