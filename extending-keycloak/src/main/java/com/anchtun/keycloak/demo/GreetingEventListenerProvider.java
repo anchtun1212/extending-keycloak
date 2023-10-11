@@ -1,10 +1,15 @@
 package com.anchtun.keycloak.demo;
 
+import java.time.LocalDateTime;
+import java.util.UUID;
+
 import org.keycloak.events.Event;
 import org.keycloak.events.EventListenerProvider;
 import org.keycloak.events.EventType;
 import org.keycloak.events.admin.AdminEvent;
+import org.keycloak.models.jpa.entities.UserEntity;
 
+import com.anchtun.keycloak.demo.domain.Subscription;
 import com.anchtun.keycloak.demo.spi.GreetingProvider;
 
 import jakarta.persistence.EntityManager;
@@ -27,13 +32,13 @@ public class GreetingEventListenerProvider implements EventListenerProvider {
         if (event.getType() == EventType.LOGIN) {
          greetingProvider.sayHi();
         } else if (event.getType() == EventType.REGISTER) {
-//            Subscription subscription = new Subscription();
-//            subscription.setId(UUID.randomUUID());
-//            UserEntity userEntity = new UserEntity();
-//            userEntity.setId(event.getUserId());
-//            subscription.setUser(userEntity);
-//            subscription.setCreated(LocalDateTime.now());
-//            entityManager.persist(subscription);
+            Subscription subscription = new Subscription();
+            subscription.setId(UUID.randomUUID());
+            UserEntity userEntity = new UserEntity();
+            userEntity.setId(event.getUserId());
+            subscription.setUser(userEntity);
+            subscription.setCreated(LocalDateTime.now());
+            entityManager.persist(subscription);
         }
     }
 
