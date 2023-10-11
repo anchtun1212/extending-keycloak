@@ -43,9 +43,7 @@ https://docs.oracle.com/javase/tutorial/ext/basics/spi.html#define-the-service-p
       1- Run: mvn clean package -Pdev
       2- You have two choices:
       2-1- Run: sudo docker compose up
-      2-2: Copy: /home/mohammedayman/git/extending-keycloak/src/main/resources/theme to /home/mohammedayman/software/keycloak-22.0.4/themes means
-           cp -r /home/mohammedayman/git/extending-keycloak/src/main/resources/theme /home/mohammedayman/software/keycloak-22.0.4/themes
-           and Copy /home/mohammedayman/git/extending-keycloak/target/deploy to /home/mohammedayman/software/keycloak-22.0.4/providers means
+      2-2: cp -r /home/mohammedayman/git/extending-keycloak/extending-keycloak/src/main/resources/theme/bootstrap /home/mohammedayman/software/keycloak-22.0.4/themes
            cp /home/mohammedayman/git/extending-keycloak/extending-keycloak/target/deploy/extending-keycloak-0.0.1-SNAPSHOT.jar /home/mohammedayman/software/keycloak-22.0.4/providers
       3- Run Keycloak: /home/mohammedayman/software/keycloak-22.0.4/bin/kc.sh start-dev --db mysql --db-url-host localhost --db-username keycloak --db-password keycloak --http-port=8094
 
