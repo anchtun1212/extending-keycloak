@@ -17,6 +17,7 @@ You can run this command: `/home/mohammedayman/software/keycloak-22.0.3/bin/kc.s
 - Authentication flows - https://www.keycloak.org/docs/latest/server_admin/index.html#_authentication-flows
 - Deploying themes - https://www.keycloak.org/docs/latest/server_development/#deploying-themes
 - Add custom JPA entities - https://www.keycloak.org/docs/latest/server_development/#_extensions_jpa
+- User Storage SPI - https://www.keycloak.org/docs/latest/server_development/#_user-storage-spi
 - openid-configuration - http://localhost:8094/realms/test1/.well-known/openid-configuration
 - To get the token - http://localhost:8094/realms/test1/protocol/openid-connect/auth?client_id=account-console&response_type=token&redirect_uri=https://httpbin.org/
   Will redirect to https://httpbin.org/ then copy the token from: `access_token` to `token_type`.
