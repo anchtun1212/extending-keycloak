@@ -21,6 +21,7 @@ You can run this command: `/home/mohammedayman/software/keycloak-22.0.3/bin/kc.s
   Will redirect to https://httpbin.org/ then copy the token from: `access_token` to `token_type`.
 - URL ENCODER - https://www.urlencoder.org/
 - keycloakify - https://docs.keycloakify.dev/
+- keycloakify GitHub - https://github.com/keycloakify/keycloakify.git
 - Apache FreeMarker - https://freemarker.apache.org/
 - keycloak Themes - https://github.com/keycloak/keycloak/tree/main/themes
   
